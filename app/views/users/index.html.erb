@@ -1,0 +1,15 @@
+<h1>ユーザー一覧</h1>
+<div class="container">
+  <div class="col-md-8 col-md-offset-2">
+    <table class="table table-borderd">
+      <tr>
+        <th>名前</th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
